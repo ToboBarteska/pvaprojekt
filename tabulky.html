@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Jacquarda+Bastarda+9&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" >
+
+    <link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Prodeje Assassin's Creed</title>
+
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="widescreen.css">
+    <style>
+       
+/* Stylování pro navbar */
+#navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+        }
+        
+        #navbar .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+        
+        #navbar ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #navbar ul li {
+            margin: 0 10px;
+        }
+        
+        #navbar ul li a {
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background-color 0.3s, color 0.3s;
+            box-shadow: 0 0 10px rgba(240, 78, 78, 0.8), 0 0 20px rgba(240, 78, 78, 0.6);
+        }
+        
+        #navbar ul li a:hover {
+            background-color: #f04e4e;
+            color: white;
+        }
+
+
+body, html{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+        /* Stylování tabulky pro prodeje */
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    background-color: #333;
+    color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #444;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #3a3a3a;
+}
+
+tr:hover {
+    background-color: #555;
+}
+
+/* Stylování formuláře */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 40px;
+    background-color: gray;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="range"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="radio"] {
+    margin-right: 5px;
+}
+
+form input[type="submit"] {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+form input[type="submit"]:hover {
+    background-color: red;
+}
+
+/* Stylování bloku pro jednotlivé sekce formuláře */
+.block {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.block h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.item {
+    margin-top: 5px;
+}
+
+#showcase {
+        background: #333 url("https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/02/assassins-creed-four-new-games-leak.jpg") no-repeat center center/cover;
+        height: 100vh;
+        color: black;
+       }
+
+       #showcase .showcase-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 0 2rem;
+        background-color: rgba(0,0,0,0.6);
+       }
+
+
+        @keyframes fadeIn {
+    from {
+        opacity: 0; /* Zcela neviditelný */
+        transform: translateY(20px); /* Mírný posun dolů */
+    }
+    to {
+        opacity: 1; /* Zcela viditelný */
+        transform: translateY(0); /* Návrat na původní pozici */
+    }
+}
+
+.fade-in {
+    opacity: 0; /* Zpočátku neviditelný */
+    transition: opacity 1s ease; /* Plynulý přechod pro neprůhlednost */
+}
+
+.fade-in.visible {
+    opacity: 1; /* Změna na viditelný */
+    animation: fadeIn 1s ease forwards; /* Spuštění animace */
+}
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo"><i class="fa-solid fa-user-ninja"></i> Assassin's Creed Prodeje</div>
+        <ul><li><a href="index.html"><i class="fa-solid fa-backward"></i> Back</a></li>
+        </ul>
+    </nav>
+
+    <div id="showcase">
+        <div class="showcase-content">
+            <h2>Prodeje her Assassin's Creed</h2>
+
+<table class="fade-in">
+    <thead>
+        <tr>
+            <th>Hra</th>
+            <th>Lokace</th>
+            <th>Prodeje (v milionech)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Assassin's Creed II</td>
+            <td>Renesanční Itálie</td>
+            <td>9.5</td>
+        </tr>
+        <tr>
+            <td>Assassin's Creed III</td>
+            <td>Koloniální Amerika</td>
+            <td>12.5</td>
+        </tr>
+        <tr>
+            <td>Assassin's Creed IV</td>
+            <td>Karibik</td>
+            <td>15.0</td>
+        </tr>
+        <tr>
+            <td>Assassin's Creed Unity</td>
+            <td>Paříž</td>
+            <td>6.0</td>
+        </tr>
+        <tr>
+            <td>Assassin's Creed Origins</td>
+            <td>Egypt</td>
+            <td>10.0</td>
+        </tr>
+        <tr>
+            <td>Assassin's Creed Odyssey</td>
+            <td>Starověké Řecko</td>
+            <td>11.0</td>
+        </tr>
+    </tbody>
+</table>
+        </div>
+    </div>
+
+    <div class="container" id="form"> <h1>Formulář</h1>
+        <form class="fade-in">
+            <div class="block">
+                <div><label for="fname">Křestní jméno:</label></div>
+                <div class="item"><input class="p-1" type="text" id="fname" name="fname"></div>
+                <div class="item"><label  for="lname">Príjmení:</label></div>
+                <div><input type="text" class="p-1" id="lname" name="lname"></div>
+            </div>
+                
+                      <div class="block">
+                        <h3>Vyber co je pro tebe nejzajímavější lokace.</h3>
+                          <div><input type="radio" id="html" name="fav_language" value="HTML"></div>
+                          <div><label for="html">Itálie</label></div>
+                          <div><input type="radio" id="css" name="fav_language" value="CSS"></div>
+                          <div><label for="css">Amerika</label></div>
+                          <div><input type="radio" id="javascript" name="fav_language" value="JavaScript"></div>
+                          <div><label for="javascript">Karibik</label></div>
+                          <div><input type="radio" id="javascript" name="fav_language" value="JavaScript"></div>
+                          <div><label for="javascript">Paříž</label></div>
+                          <div><input type="radio" id="javascript" name="fav_language" value="JavaScript"></div>
+                          <div><label for="javascript">Egypt</label></div>
+                          <div><input type="radio" id="javascript" name="fav_language" value="JavaScript"></div>
+                          <div><label for="javascript">Řecko</label></div>
+                      </div>
+                      <div class="block">
+                          <div><label for="vol">Na kolik máte rádi RPG prvky? ( 0 - 100%):</label></div>
+                          <div><input class="w-100 m-t-1" type="range" id="vol" name="vol" min="0" max="100"></div>
+                      </div>
+                                    
+                                    
+                  
+              
+              
+                  <div>
+                      </div>
+                      <div><input type="submit" value="Odeslat"></div>
+                              </form>
+                          </div>
+                  </div>
+
+                  <script>
+                    // Funkce pro kontrolu viditelnosti prvku
+                    function isElementInViewport(el) {
+                        const rect = el.getBoundingClientRect();
+                        return (
+                            rect.top >= 0 &&
+                            rect.left >= 0 &&
+                            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                        );
+                    }
+            
+                    // Funkce pro přidání třídy, pokud je prvek viditelný
+                    function checkFadeIn() {
+                        const elements = document.querySelectorAll('.fade-in');
+                        elements.forEach(element => {
+                            if (isElementInViewport(element)) {
+                                element.classList.add('visible'); // Přidání třídy pro fade-in
+                            }
+                        });
+                    }
+            
+                    // Kontrola viditelnosti při posouvání
+                    window.addEventListener('scroll', checkFadeIn);
+                    window.addEventListener('resize', checkFadeIn); // Kontrola při změně velikosti okna
+            
+                    // První kontrola při načtení stránky
+                    document.addEventListener('DOMContentLoaded', checkFadeIn);
+                </script>
+</body>
+</html>

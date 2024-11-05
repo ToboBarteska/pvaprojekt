@@ -1,0 +1,346 @@
+
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: grey;
+        }
+
+        .py-1 {
+    padding: 1.5rem 0;
+}
+
+a {
+    color: white;
+    padding: 10px 15px;
+    background-color: gray;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+li {
+    margin-top: 5px;
+}
+
+button {
+    color: white;
+    padding: 10px 20px;
+    background-color: gray; /* Výchozí barva tlačítka */
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f04e4e; /* Změna barvy tlačítka na červenou při najetí */
+    color: white; /* Barva textu zůstane bílá při najetí */
+    box-shadow: 0 0 10px rgba(240, 78, 78, 0.8), 0 0 20px rgba(240, 78, 78, 0.6), 0 0 30px rgba(240, 78, 78, 0.4); /* Efekt záření */
+}
+
+a:hover {
+    background-color: #f04e4e; /* Změna pozadí při najetí (volitelné) */
+    box-shadow: 0 0 10px rgba(240, 78, 78, 0.8), 0 0 20px rgba(240, 78, 78, 0.6), 0 0 30px rgba(240, 78, 78, 0.4);
+}
+
+.p-1 {
+    padding: 1.5rem;
+}
+
+.m-1 {
+    margin: 1.5rem
+}
+
+hr {
+    border: none;
+    height: 3px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+
+        .container {
+            border: 5px black solid;
+            background-color: white;
+            color: black;
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 10px;
+            border-radius: 30px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        .block{
+            margin: 20px 20px 25px;
+            border: 1px red dotted;
+            padding: 10px ;
+            background-color: lightgray;
+            padding: 10px 10px 15px ;
+        }
+
+        .l-heading {
+            font-size: 4rem;
+            margin-bottom: 0.75rem;
+            line-height: 1.1;
+        }
+
+        .text-primary {
+        color: red;
+}
+
+        .m-heading {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+header {
+    margin-left: 50px;
+}
+
+footer {
+    margin-left: 50px;
+}
+
+        .lead {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+        }
+
+        
+        
+
+
+        #navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+        }
+        
+        #navbar .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+        
+        #navbar ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #navbar ul li {
+            margin: 0 10px;
+        }
+        
+        #navbar ul li a {
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        #navbar ul li a:hover {
+            background-color: #f04e4e;
+            color: white;
+        }
+
+       #showcase {
+        background: #333 url("https://images6.alphacoders.com/131/1318199.jpg") no-repeat center center/cover;
+        height: 100vh;
+        color: white;
+       }
+
+       #showcase .showcase-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 0 2rem;
+        background-color: rgba(0,0,0,0.6);
+       }
+
+       #target-section {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.game-location {
+    display: flex;
+    background-color: lightgrey;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.game-image {
+    max-width: 300px;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.game-details {
+    max-width: 800px;
+}
+
+
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    
+}
+
+       #target-section {
+        padding: 2rem;
+        background-color: grey;
+        margin-top: 2rem;
+       }
+
+       #naucitese .items {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-around;
+}
+
+#naucitese .item {
+    position: relative;
+    text-align: center;
+    padding: 1rem;
+    width: 200px;
+    top: 0;
+}
+
+#naucitese .items .item i {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    margin: 1rem 0;
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    color: black;
+}
+
+#naucitese .item:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    top: -10px;
+    transition: all 0.5s ease;
+}
+.bg-dark {
+    background-color: gray;
+    color: white;
+}
+
+#kontakt ul {
+    margin: 0.5rem 0;
+    list-style: none;
+}
+
+#kontakt li {
+    padding: 0.5rem 0;
+    border-bottom: black dotted 5px;
+    
+}
+
+#kontakt h2 {
+    margin: 1rem 0;
+    padding: 1rem 0;
+}
+
+#kontakt .container {
+    display: flex;
+    background-color: lightgrey;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+#kontakt div {
+    flex: 1;
+}
+
+#kontakt .kontakt-img {
+    background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b1f0f58d-c898-44fc-b872-3b1249af9c5a/dgbi6mv-96028fb0-00cf-441b-b78e-021ac8a5443f.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2IxZjBmNThkLWM4OTgtNDRmYy1iODcyLTNiMTI0OWFmOWM1YVwvZGdiaTZtdi05NjAyOGZiMC0wMGNmLTQ0MWItYjc4ZS0wMjFhYzhhNTQ0M2YuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.UzBcxLB7Vh4BG0CFvDZWGCW6SVSAKtV1zuYY9Ko8KBM") no-repeat center center/cover;
+}
+
+#parallax {
+    /* The image used */
+    background-image: url("https://wallpapers.com/images/hd/assassin-s-creed-characters-1920-x-1080-wallpaper-uq71hn23l4n11lbu.jpg");
+    height: 400px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallax .content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#parallax .content h2 {
+    background-color: white;
+    padding: 0.5rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Zcela neviditelný */
+        transform: translateY(20px); /* Mírný posun dolů */
+    }
+    to {
+        opacity: 1; /* Zcela viditelný */
+        transform: translateY(0); /* Návrat na původní pozici */
+    }
+}
+
+.fade-in {
+    opacity: 0; /* Zpočátku neviditelný */
+    transition: opacity 1s ease; /* Plynulý přechod pro neprůhlednost */
+}
+
+.fade-in.visible {
+    opacity: 1; /* Změna na viditelný */
+    animation: fadeIn 1s ease forwards; /* Spuštění animace */
+}
+
+    
